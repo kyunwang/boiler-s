@@ -7,8 +7,6 @@ const app = express();
 
 import routes from './routes';
 
-require('dotenv').config({ path: './vars.env' });
-
 // Setting the view engine
 app.set('view engine', 'pug')
 	.set('views', './server/views');
@@ -30,7 +28,3 @@ app.use((req, res, next) => {
 
 
 app.use('/', routes);
-
-app.listen(process.env.PORT, function() {
-	console.log('Listening to port: ', process.env.PORT);
-});
