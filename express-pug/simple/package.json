@@ -1,0 +1,29 @@
+{
+	"name": "simple",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon --exec babel-node ./server/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Kang Yun Wang(Kevin Wang)",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.2",
+		"dotenv": "^5.0.1",
+		"express": "^4.16.3",
+		"pug": "^2.0.3"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"nodemon": "^1.17.3"
+	},
+	"babel": {
+		"presets": [
+			"env"
+		]
+	}
+}
